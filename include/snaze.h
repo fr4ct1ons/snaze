@@ -1,13 +1,18 @@
 #pragma once
 #include"snake.h"
+#include<fstream>
+#include<iostream>
+#include<string>
 
 namespace snz
 {
-    class snaze_game
+    class snaze
     {
     private:
+        int **level;
+        size_t levelW = 0, levelH = 0;
     public:
-        snaze_game();
-        ~snaze_game();
+        snaze(std::string);
+        ~snaze();
     };
 }
