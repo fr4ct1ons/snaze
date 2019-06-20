@@ -10,10 +10,10 @@ namespace snz
         inputFile >> levelH;
         inputFile >> levelW;
 
-        level = new int*[levelH];
+        level = new object*[levelH];
         for (size_t i = 0; i < levelH; i++)
         {
-            level[i] = new int[levelW];
+            level[i] = new object[levelW];
         }
         
         std::string buffer;
@@ -25,9 +25,9 @@ namespace snz
                 for (size_t j = 0; j < buffer.size(); j++)
                 {
                     if(buffer[j] == '#')
-                        level[i][j] = 1;
+                        level[i][j] = WALL;
                     else if(buffer[j] == ' ')
-                        level[i][j] = 2;
+                        level[i][j] = EMPTY;
                 }
             }
         }
@@ -36,9 +36,9 @@ namespace snz
         {
             for (size_t j = 0; j < levelW; j++)
             {
-                if(level[i][j] == 1)
-                    std::cout << '#';
-                else if(level[i][j] == 2)
+                if(level[i][j] == WALL)
+                    std::cout << "\u2592";
+                else if(level[i][j] == EMPTY)
                     std::cout << ' ';
             }
             std::cout << "\n";
