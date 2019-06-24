@@ -27,10 +27,12 @@ namespace snz
             object gameObject;
             size_t x, y; 
         } game_object;
+
         game_object **level;
         std::stack<game_object * > path;
         std::vector<game_object * > snake;
         size_t levelW = 0, levelH = 0;
+        game_object spawn;
     public:
         snaze(std::string);
         ~snaze();

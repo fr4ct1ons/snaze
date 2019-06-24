@@ -26,12 +26,16 @@ namespace snz
             {
                 for (size_t j = 0; j < buffer.size(); j++)
                 {
+                    level[i][j].x = j;
+                    level[i][j].y = i;
                     if(buffer[j] == '#')
                         level[i][j].gameObject = WALL;
                     else if(buffer[j] == ' ')
                         level[i][j].gameObject = EMPTY;
                     else if(buffer[j] == '*')
+                    {
                         level[i][j].gameObject = SPAWN;
+                    }
                 }
             }
         }
@@ -61,6 +65,6 @@ namespace snz
         {
             delete[] level[i];
         }
-        delete level;
+        delete[] level;
     }
 }
