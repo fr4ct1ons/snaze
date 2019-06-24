@@ -33,8 +33,13 @@ namespace snz
         std::vector<game_object * > snake;
         size_t levelW = 0, levelH = 0;
         game_object spawn;
+        char snakeDir = 'N';
+        bool canRun = false;
     public:
         snaze(std::string);
         ~snaze();
+        void render();
+        void move();
+        bool gameOver();
     };
 }
