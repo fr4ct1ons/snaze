@@ -35,11 +35,14 @@ namespace snz
         game_object spawn;
         char snakeDir = 'N';
         bool canRun = false;
+        int score = 0;
+        game_object food;
     public:
         snaze(std::string);
         ~snaze();
         void render();
         void move();
         bool gameOver();
+        void eatFood();
     };
 }

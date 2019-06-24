@@ -41,6 +41,7 @@
         "deque": "cpp",
         "ratio": "cpp",
         "stack": "cpp",
-        "vector": "cpp"
+        "vector": "cpp",
+        "ctime": "cpp"
     }
 }
