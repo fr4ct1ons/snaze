@@ -3,6 +3,8 @@
 #include<fstream>
 #include<iostream>
 #include<string>
+#include<stack>
+#include<vector>
 
 namespace snz
 {
@@ -25,7 +27,9 @@ namespace snz
             object gameObject;
             size_t x, y; 
         } game_object;
-        object **level;
+        game_object **level;
+        std::stack<game_object * > path;
+        std::vector<game_object * > snake;
         size_t levelW = 0, levelH = 0;
     public:
         snaze(std::string);
