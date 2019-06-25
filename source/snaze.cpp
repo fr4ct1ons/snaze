@@ -63,7 +63,10 @@ namespace snz
 
     void snaze::render()
     {
+        std::cout << "---------------  ======== SNAZE ========  --------------- \n";
+        std::cout << "--------------------------------------------------------- \n";
         std::cout << "Score: " << score << "\n";
+        std::cout << "--------------------------------------------------------- \n";
         for (size_t i = 0; i < levelH; i++)
         {
             for (size_t j = 0; j < levelW; j++)
@@ -82,6 +85,7 @@ namespace snz
             std::cout << "\n";
         }
 
+        std::cout << "--------------------------------------------------------- \n";
         //std::cout << "Finished level output" << std::endl;
 
         std::cout << std::flush;
@@ -331,8 +335,11 @@ namespace snz
         else
         {
             canRun = true;
-            //render();
-            //std::exit(0);
+            render();
+            std::cout << "WHOOPS! It seems like the snake has met its demise... \n";
+            std::cout << "May it forever live on in our hearts. \n";
+            std::cout << "Final score: " << score << std::endl;
+            std::exit(0);
             return;
         }
 
@@ -348,7 +355,7 @@ namespace snz
     void snaze::eatFood()
     {
         score++;
-        std::cout << "\n \n WOOHOO! I HAVE MONEY!!!! \n \n \n" << score << std::endl;
+        //std::cout << "\n \n WOOHOO! I HAVE MONEY!!!! \n \n \n" << score << std::endl;
         level[food.y][food.x].gameObject = EMPTY;
         if(score >=5)
         {

@@ -42,6 +42,12 @@
         "ratio": "cpp",
         "stack": "cpp",
         "vector": "cpp",
-        "ctime": "cpp"
+        "ctime": "cpp",
+        "functional": "cpp",
+        "list": "cpp",
+        "xthread": "cpp",
+        "thread": "cpp",
+        "unordered_map": "cpp",
+        "xhash": "cpp"
     }
 }
