@@ -1,0 +1,58 @@
+\hypertarget{classsnz_1_1snaze}{}\section{snz\+:\+:snaze Class Reference}
+\label{classsnz_1_1snaze}\index{snz\+::snaze@{snz\+::snaze}}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classsnz_1_1snaze_ad237720b60ff28c6947fcf0b99a18c77}{snaze} (std\+::string filename)
+\begin{DoxyCompactList}\small\item\em Default constructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsnz_1_1snaze_a30242bf3b637dbbb4ad8d452639a31c6}\label{classsnz_1_1snaze_a30242bf3b637dbbb4ad8d452639a31c6}} 
+\hyperlink{classsnz_1_1snaze_a30242bf3b637dbbb4ad8d452639a31c6}{$\sim$snaze} ()
+\begin{DoxyCompactList}\small\item\em Default destructor. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsnz_1_1snaze_a8461a4dfdb2249a2f23306e33a6a8e2e}\label{classsnz_1_1snaze_a8461a4dfdb2249a2f23306e33a6a8e2e}} 
+void \hyperlink{classsnz_1_1snaze_a8461a4dfdb2249a2f23306e33a6a8e2e}{render} ()
+\begin{DoxyCompactList}\small\item\em Renders the current game state. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsnz_1_1snaze_a684837948ec3986f2d94e749132d687e}\label{classsnz_1_1snaze_a684837948ec3986f2d94e749132d687e}} 
+void \hyperlink{classsnz_1_1snaze_a684837948ec3986f2d94e749132d687e}{move} ()
+\begin{DoxyCompactList}\small\item\em Advances the game state, i.\+e, moves the snake and spawns food. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classsnz_1_1snaze_aaa0d80327f05e4a441dae8545c985727}\label{classsnz_1_1snaze_aaa0d80327f05e4a441dae8545c985727}} 
+bool \hyperlink{classsnz_1_1snaze_aaa0d80327f05e4a441dae8545c985727}{game\+Over} ()
+\begin{DoxyCompactList}\small\item\em Get if the game is over or not. \end{DoxyCompactList}\item 
+void \hyperlink{classsnz_1_1snaze_ab1dc8fc6041a3f74824d43e11ae48e92}{eat\+Food} ()
+\begin{DoxyCompactList}\small\item\em Process the event of the snake eating food. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classsnz_1_1snaze_ad237720b60ff28c6947fcf0b99a18c77}\label{classsnz_1_1snaze_ad237720b60ff28c6947fcf0b99a18c77}} 
+\index{snz\+::snaze@{snz\+::snaze}!snaze@{snaze}}
+\index{snaze@{snaze}!snz\+::snaze@{snz\+::snaze}}
+\subsubsection{\texorpdfstring{snaze()}{snaze()}}
+{\footnotesize\ttfamily snz\+::snaze\+::snaze (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+
+
+Default constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filename} & -\/ Input file containing the level to be opened. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classsnz_1_1snaze_ab1dc8fc6041a3f74824d43e11ae48e92}\label{classsnz_1_1snaze_ab1dc8fc6041a3f74824d43e11ae48e92}} 
+\index{snz\+::snaze@{snz\+::snaze}!eat\+Food@{eat\+Food}}
+\index{eat\+Food@{eat\+Food}!snz\+::snaze@{snz\+::snaze}}
+\subsubsection{\texorpdfstring{eat\+Food()}{eatFood()}}
+{\footnotesize\ttfamily void snz\+::snaze\+::eat\+Food (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Process the event of the snake eating food. 
+
+In extent, it adds a point to the score and respawns the food. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+include/snaze.\+h\item 
+source/snaze.\+cpp\end{DoxyCompactItemize}
